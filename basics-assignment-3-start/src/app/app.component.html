@@ -18,11 +18,11 @@
           (click)="onDisplayDetails()">Display Details</button>
           
         <p *ngIf="displayDetails">Oooooooooo Weeeeeeeee!</p>
-        
+        <!-- index is a reserved keyword for getting incremental index -->
         <p 
-          *ngFor="let logs of buttonClickLogs" 
-          [ngStyle]="{backgroundColor: logs >= 4 ? 'lightblue' : ''}"
-          [ngClass]="{beyond5th: logs >= 4}">{{ logs }}</p>
+          *ngFor="let log of buttonClickLogs; let i = index" 
+          [ngStyle]="{backgroundColor: i >= 4 ? 'lightblue' : ''}"
+          [ngClass]="{beyond5th: i >= 4}">{{ log }}</p>
     </div>
   </div>
 </div>

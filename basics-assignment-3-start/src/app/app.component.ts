@@ -11,6 +11,7 @@ export class AppComponent {
   
   onDisplayDetails() {
     this.displayDetails = !this.displayDetails;
-    this.buttonClickLogs.push(this.buttonClickLogs.length);
+    //this.buttonClickLogs.push(this.buttonClickLogs.length);
+    this.buttonClickLogs.push(new Date());
   }
 }
