@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div>
+      <label>Game controller</label>
+    </div>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerName"> -->
+    <!-- We can either bind the property like above, or use local references in the template 
+         with the '#' notation like below. -->
+    <!-- <input 
+      type="text" 
+      class="form-control" 
+      #serverNameInput>
+    <label>Server Content</label> -->
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent"> -->
+    <!-- or we can define a local reference, and get the local reference in typescript. see .ts file. -->
+    <!-- <input 
+      type="text" 
+      class="form-control" 
+      #serverContentInput>
+    <br> -->
+    <!-- When using a local reference, we have to pass the reference into a method to 
+         give the data to the component -->
+    <button
+      class="btn btn-success"
+      (click)="onStartGame()">Start</button>
+    <button
+      class="btn btn-danger"
+      (click)="onStopGame()">Stop</button>
+  </div>
+</div>
